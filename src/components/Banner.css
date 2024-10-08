@@ -1,4 +1,3 @@
-/* Global Styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -6,54 +5,52 @@ body, html {
   width: 100%;
   font-family: Arial, sans-serif;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling for better user experience */
 }
 
-/* Banner Section */
 .banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Ensures the banner always takes up the full height */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-image: url('../assets/images/bg.jpg'); /* Path to the background image */
   position: relative;
   text-align: center;
   width: 100%;
-  transition: background-color 0.5s ease; /* Smooth transition for background color changes */
+  transition: background-color 0.5s ease; /* Smooth transition for background color change */
 }
 
 .banner-content {
   color: #edecec;
-  max-width: 90%; /* Adjusted for small screens */
-  padding: 20px;
+  max-width: 90%; /* Adjusted width to fit on smaller screens */
+  padding: 20px; /* Increased padding for better readability */
   z-index: 1;
   opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards; /* Fade in effect */
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
 .banner-content h1 {
-  font-size: 4vw; /* Responsive heading */
+  font-size: 4vw; /* Responsive font size */
   font-weight: bold;
   margin-bottom: 100px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
 .banner-content p {
-  font-size: 2vw; /* Responsive paragraph */
+  font-size: 2vw; /* Responsive font size */
   margin-bottom: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Slight shadow for better contrast */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Actions Section */
 .actions {
   display: flex;
   flex-direction: column;
@@ -64,23 +61,22 @@ body, html {
 .signup-btn, .signin-btn, .find-more-btn {
   margin: 10px;
   padding: 15px 30px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent button background */
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for buttons */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5vw; /* Responsive button text */
-  color: white; /* White button text for visibility */
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Button hover effects */
+  font-size: 1.5vw; /* Responsive font size */
+  color: rgb(4, 2, 2); /* Ensure text color is white for readability */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added shadow effect */
 }
 
 .signup-btn:hover, .signin-btn:hover, .find-more-btn:hover {
-  background-color: #76c043; /* Hover background color */
+  background-color: #76c043;
   color: white;
-  transform: translateY(-5px); /* Floating effect on hover */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Added shadow on hover for a floating effect */
 }
 
-/* Overlay Effect for Banner */
 .banner::before {
   content: '';
   position: absolute;
@@ -88,63 +84,61 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(217, 215, 215, 0.4); /* Light overlay for text contrast */
+  background: rgba(217, 215, 215, 0.4); /* Overlay for better text readability */
   z-index: 0;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .banner-content h1 {
-    font-size: 6vw; /* Larger text for small screens */
+      font-size: 6vw; /* Bigger text for small screens */
   }
-  
+
   .banner-content p {
-    font-size: 4vw; /* Larger paragraph text */
+      font-size: 4vw;
   }
-  
+
   .signup-btn, .signin-btn, .find-more-btn {
-    font-size: 4vw; /* Larger buttons */
-    padding: 10px 20px;
+      font-size: 4vw; /* Adjust button text for smaller screens */
+      padding: 10px 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .banner-content h1 {
-    font-size: 3vw; /* Smaller text for large screens */
+      font-size: 3vw; /* Smaller text for large screens */
   }
-  
+
   .banner-content p {
-    font-size: 1.8vw; /* Smaller paragraph text */
+      font-size: 1.8vw;
   }
 }
 
-/* Optional Zoom Effect for Background Image */
+/* Optional: Subtle zoom effect for background image */
 @keyframes zoomIn {
   0% {
-    transform: scale(1);
+      transform: scale(1);
   }
   100% {
-    transform: scale(1.05);
+      transform: scale(1.05);
   }
 }
 
-/* Success Stories Section */
+
+
 .success-stories {
-  margin-top: 300px;
+  margin-top: 300px; /* Adjust margin if necessary */
   padding: 20px;
-  background-color: white;
-  border-radius: 20px; /* Reduced border-radius for a cleaner look */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  max-width: 1200px; /* Limit width for larger screens */
-  margin-left: auto;
-  margin-right: auto;
+  background-color: white; /* Ensure it's visible against the background */
+  border-radius: 100px; /* Optional: for rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: for a slight shadow */
 }
 
 .success-stories h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Adjust font size */
+  margin-bottom: 10px; /* Space below the heading */
 }
 
 .success-stories p {
-  font-size: 16px;
+  font-size: 16px; /* Adjust font size */
 }
+
