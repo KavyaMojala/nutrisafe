@@ -1,0 +1,91 @@
+/* About.css */
+
+.about-container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  padding: 40px; /* Increased padding for more space */
+  background-color: #f5f5f5; /* Light grey background for the page */
+  min-height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+}
+
+.form-container {
+  background-color: white; /* White background for the form */
+  padding: 30px; /* Add padding inside the container */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 800px; /* Set a max width for the content */
+  width: 100%;
+  margin: 20px; /* Margin for spacing */
+}
+
+h1, h2, h3 {
+  color: #333; /* Darker text color for contrast */
+  text-align: center;
+}
+
+p {
+  color: #555; /* Softer text color */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 20px;
+  text-align: justify; /* Justify text for better alignment */
+}
+
+.about-image {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  border-radius: 10px; /* Round the image corners */
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px; /* Space between list items */
+  line-height: 1.5; /* Improve readability of list items */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+label {
+  margin: 10px 0; /* Add margin around labels for spacing */
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="text"], textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  min-height: 100px; /* Minimum height for textarea */
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #4CAF50; /* Green background for submit button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

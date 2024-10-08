@@ -1,0 +1,40 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  background-image: url('C:\Users\MOJALA KAVYA\nutrisafe\src\assets\images\bg.jpg'); /* Update the path based on where your image is stored */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  height: 100vh; /* Take full viewport height */
+}
+
+.banner-content {
+  color: white;
+  max-width: 500px;
+}
+
+.actions button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button:hover {
+  background-color: #76c043;
+  color: white;
+}

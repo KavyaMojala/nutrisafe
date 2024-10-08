@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px; /* Further reduced padding */
+    background-color: #f3f6e4; /* Light background color */
+    background-attachment: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .logo h1 {
+    font-size: 18px; /* Reduced logo font size further */
+    color: #4CAF50; /* Green color for the logo */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 15px; /* Reduced margin for spacing */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark color for links */
+    font-weight: bold;
+    padding: 6px 10px; /* Reduced padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-links a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #4CAF50; /* Green background on hover */
+  }
+  
+  .nav-links a.active {
+    color: #fff; /* Active link text color */
+    background-color: #a6db55; /* Active link background */
+  }
+  

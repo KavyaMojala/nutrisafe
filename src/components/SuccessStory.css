@@ -1,0 +1,29 @@
+/* SuccessStory.css */
+.success-story {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+    margin: 20px 0; /* Add some margin for spacing */
+    border: 1px solid #ddd; /* Optional: add a border */
+    border-radius: 5px; /* Optional: round corners */
+    padding: 15px; /* Add some padding */
+  }
+  
+  .success-image {
+    width: 120px; /* Set a fixed width for the image */
+    height: 120px; /* Set a fixed height for the image */
+    border-radius: 50%; /* Optional: make the image circular */
+    margin-right: 15px; /* Space between image and text */
+  }
+  
+  .story-content {
+    flex-grow: 1; /* Make this section take the remaining space */
+  }
+  
+  h3 {
+    margin: 0 0 5px; /* Add some margin below the name */
+  }
+  
+  p {
+    margin: 0; /* Remove margin from paragraph */
+  }
+  

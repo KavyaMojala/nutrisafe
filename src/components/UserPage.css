@@ -1,0 +1,119 @@
+/* UserPage.css */
+
+/* General styles for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background for better contrast */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style for the main container */
+.user-page-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+    padding: 40px; /* Increased padding for spacing */
+    background-image: url('../assets/images/userbg.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow effect */
+}
+
+/* Header style */
+.user-page-container h1 {
+    color: #333;
+    font-size: 28px; /* Increased font size for better visibility */
+    margin-bottom: 20px;
+    text-align: center; /* Center the header */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Flex container for the profile image and info */
+.profile-container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 20px; /* Space below the profile container */
+}
+
+/* Style for the profile image */
+.profile-image {
+    width: 120px; /* Adjusted width */
+    height: 120px; /* Fixed height */
+    border-radius: 50%; /* Circular */
+    margin-right: 20px; /* Space between image and text */
+    border: 3px solid #4CAF50; /* Green border for emphasis */
+    object-fit: cover; /* Cover without distortion */
+}
+
+/* Style for the profile info */
+.profile-info {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    font-size: 20px; /* Slightly larger font size */
+    color: #333; /* Dark text color */
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for sections */
+    border-radius: 12px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light gray border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px; /* Increased button size */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-top: 10px; /* Space above buttons */
+    font-size: 18px; /* Larger font size for better readability */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Style for the danger button (Logout) */
+button.danger {
+    background-color: #f44336; /* Red background */
+}
+
+button.danger:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .user-page-container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+    
+    .profile-image {
+        width: 100px; /* Smaller image on mobile */
+        height: 100px; /* Fixed height */
+    }
+    
+    h1 {
+        font-size: 24px; /* Smaller font size on mobile */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button text */
+    }
+}

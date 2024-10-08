@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e30c49de.css",
+    "main.js": "/static/js/main.db837ad2.js",
+    "static/js/488.6518bb47.chunk.js": "/static/js/488.6518bb47.chunk.js",
+    "static/media/alice.jpg": "/static/media/alice.ae2dc9b4214335e1ee57.jpg",
+    "static/media/signbg.jpeg": "/static/media/signbg.30efd2d29fbb537e9077.jpeg",
+    "static/media/nutrition.jpg": "/static/media/nutrition.96ea15889d72d42e9c55.jpg",
+    "static/media/bob.jpg": "/static/media/bob.5b69c3d7104a5ce227ee.jpg",
+    "static/media/bg.jpg": "/static/media/bg.d05d066f24f0af65f7bd.jpg",
+    "static/media/charlie.jpg": "/static/media/charlie.6939eef606c47bbaf592.jpg",
+    "static/media/stuffed-peppers.jpg": "/static/media/stuffed-peppers.2f893726bef1d8afe459.jpg",
+    "static/media/chile-colorado.jpg": "/static/media/chile-colorado.49b7201e4aeb562aa954.jpg",
+    "static/media/abhi.jpg": "/static/media/abhi.d7989378a499963e94df.jpg",
+    "static/media/Quinoa-Salad.jpg": "/static/media/Quinoa-Salad.2e549dc67f1f5c328bb8.jpg",
+    "static/media/diana.jpg": "/static/media/diana.372c6c8f0f2118e1de3d.jpg",
+    "static/media/community-contributor.jpg": "/static/media/community-contributor.6e9d38c956ca7a1b75e0.jpg",
+    "index.html": "/index.html",
+    "main.e30c49de.css.map": "/static/css/main.e30c49de.css.map",
+    "main.db837ad2.js.map": "/static/js/main.db837ad2.js.map",
+    "488.6518bb47.chunk.js.map": "/static/js/488.6518bb47.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e30c49de.css",
+    "static/js/main.db837ad2.js"
+  ]
+}

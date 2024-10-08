@@ -1,0 +1,103 @@
+.signup-page {
+    background-image: url('../assets/images/signbg.jpeg'); /* Ensure the path is correct */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background */
+    background-attachment: fixed; /* Fix the background image */
+    min-height: 100vh; /* Ensure it covers full height of the viewport */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Optional: add some padding */
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 15px; /* Rounded corners for the form */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    padding: 30px; /* Increased padding for a spacious feel */
+    width: 90%; /* Set width to 90% of the parent */
+    max-width: 350px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add a hover effect on the form container */
+  }
+  
+  .form-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Adjusted space between form groups */
+  }
+  
+  label {
+    display: block; /* Makes labels take up full width */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels bold */
+    font-size: 14px; /* Font size for labels */
+    color: #333; /* Color for labels */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  label:hover {
+    color: #4caf50; /* Change color on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  input, select {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Increased padding inside input/select */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 14px; /* Font size for inputs */
+    transition: border 0.3s, box-shadow 0.3s, background-color 0.3s, background 0.3s; /* Add transition for focus and hover effect */
+  }
+  
+  input:hover, select:hover {
+    background: linear-gradient(to right, #f0f0f0, #e8e8e8); /* Light gradient on hover */
+  }
+  
+  input:focus, select:focus {
+    border: 2px solid #4caf50; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add shadow effect on focus */
+    outline: none; /* Remove default outline */
+    background: linear-gradient(to right, #ffffff, #f9f9f9); /* Gradient effect on focus */
+  }
+  
+  .styled-button {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Adjusted padding for button */
+    font-size: 16px; /* Font size */
+    color: #ffffff; /* Text color */
+    background: linear-gradient(90deg, #4caf50, #2e7d32); /* Gradient background */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s, opacity 0.3s; /* Smooth transitions */
+    margin: 10px 0; /* Margin for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .styled-button:hover {
+    background: linear-gradient(90deg, #388e3c, #1b5e20); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    opacity: 0.9; /* Slightly fade the button on hover */
+    animation: pulse 0.5s infinite alternate; /* Add pulse animation */
+  }
+  
+  .styled-button:active {
+    transform: translateY(1px); /* Press effect on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  

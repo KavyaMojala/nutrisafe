@@ -1,0 +1,77 @@
+/* src/components/SuccessStories.css */
+
+.success-stories-container {
+    padding: 60px 30px; /* Increased padding for more spacing */
+    background-color: #f0f0f0; /* Slightly lighter grey background */
+    min-height: 100vh; /* Full viewport height */
+    text-align: center; /* Center align the entire section */
+}
+
+.story-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center the cards */
+    gap: 40px; /* More space between cards */
+    margin: 0 auto;
+    max-width: 1400px; /* Set max width */
+}
+
+.story-card {
+    background-color: #fff; /* White background */
+    border-radius: 20px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow effect */
+    padding: 25px; /* More padding inside the card */
+    width: 350px; /* Slightly wider card */
+    max-width: 100%; /* Ensure it remains responsive */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added scaling effect */
+}
+
+.story-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.story-image {
+    width: 100%; /* Responsive image */
+    border-radius: 15px; /* More rounded image corners */
+    margin-bottom: 20px; /* More space between image and text */
+    transition: transform 0.3s ease-in-out; /* Added zoom effect */
+}
+
+.story-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.story-title {
+    color: #222; /* Slightly darker title color */
+    text-align: center; /* Center align title */
+    font-size: 1.6em; /* Larger title font size */
+    font-weight: bold;
+    margin: 15px 0; /* More margin around title */
+}
+
+.story-description {
+    color: #666; /* Softer text color */
+    font-size: 1.2em; /* Slightly larger text */
+    line-height: 1.8em; /* Increased spacing between lines */
+    margin: 10px 0; /* More margin around text */
+    text-align: justify; /* Justify text for a clean layout */
+}
+
+strong {
+    color: #222; /* Darker color for strong text */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .story-cards {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .story-card {
+        width: 90%; /* Reduce card width for smaller screens */
+        margin: 0 auto; /* Center the cards */
+    }
+}

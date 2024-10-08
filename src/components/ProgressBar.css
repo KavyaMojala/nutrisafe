@@ -1,0 +1,14 @@
+/* ProgressBar.css */
+
+.progress-bar-container {
+    width: 100%; /* Full width */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are effective */
+}
+
+.progress-bar-fill {
+    height: 20px; /* Height of the filled part */
+    background-color: #3e92b8; /* Green color for the filled part */
+    transition: width 0.5s ease; /* Smooth transition effect */
+}
