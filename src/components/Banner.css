@@ -19,7 +19,6 @@ body, html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url('../assets/images/bg.jpg'); /* Path to the background image */
   position: relative;
   text-align: center;
   width: 100%;
