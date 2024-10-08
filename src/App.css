@@ -6,7 +6,7 @@ body, html {
 
 .App {
   height: 100%;
-  background-image: url('C:\Users\MOJALA KAVYA\nutrisafe\src\assets\images\bg.jpg'); /* Update the path based on where your image is stored */
+  background-image: url('./assets/images/bg.jpg');/* Update the path based on where your image is stored */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
